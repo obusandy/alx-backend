@@ -52,8 +52,8 @@ class Server:
         dataset = self.dataset()
 
         try:
-            datast = [dataset[idx] for idx in range(start, end)]
+            data = [dataset[idx] for idx in range(start, end)]
         except IndexError:
-            datast = []
+            data = []
         # Return the appropriate page of the dataset
-        return datast
+        return data
