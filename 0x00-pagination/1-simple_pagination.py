@@ -7,17 +7,15 @@ import csv
 import math
 from typing import List, Tuple
 
-
 def index_range(page: int, page_size: int) -> Tuple[int]:
     """
     args: page - default 1
-            page_size - default value of 10
+    page_size - default value of 10
     """
     start_indx = (page - 1) * page_size
     end_indx = page * page_size
 
     return (start_indx, end_indx)
-
 
 class Server:
     """
@@ -32,9 +30,9 @@ class Server:
         self.__dataset = None
 
     def dataset(self) -> List[List]:
-        """
-        Load and cache the dataset from the CSV file
-        """
+    """
+    Load and cache the dataset from the CSV file
+    """
         if self.__dataset is None:
             with open(self.DATA_FILE) as fl:
                 reader = csv.reader(fl)
