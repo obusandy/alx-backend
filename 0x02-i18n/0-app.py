@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Below initializes the flask app
-setup a basic Flask app in 0-app.py below
+setup a basic Flask app in 0-apppy below
 """
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -11,7 +12,7 @@ app = Flask(__name__)
 def index():
     """
     Create a single / route
-    outputs “Welcome to Holberton”
+    outputs
     """
     return render_template('0-index.html')
 
